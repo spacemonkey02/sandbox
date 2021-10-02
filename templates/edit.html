@@ -1,0 +1,29 @@
+<doctype html>
+<title>Edit User</title>
+<h2>Edit User</h2>
+<form method="post" action="/update">
+    <dl>
+		<p>
+			<input name="inputName" value="{{ row['user_name'] }}" type="text" placeholder="Name" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputFormNumber" value="{{ row['form_number'] }}" type="text" placeholder="Form Number" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputCaseNumber" value="{{ row['case_number'] }}" type="text" placeholder="Case Number" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputCaseStatus" value="{{ row['case_status'] }}" type="text" placeholder="Case Status" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputFormDescription" value="{{ row['form_description'] }}" type="text" placeholder="Form Description" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputPassword" value="" type="password" placeholder="Password" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input name="id" value="{{ row['user_id'] }}" type="hidden">
+		<input type="submit" value="Submit">
+	</p>
+</form>
